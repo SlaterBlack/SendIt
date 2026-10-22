@@ -1,0 +1,17 @@
+<header class="navbar">
+  <a class="navbar-brand" routerLink="/overview" aria-label="SendIt home">
+    <span class="brand-name">Send<span class="brand-accent">It</span></span>
+  </a>
+  <nav class="navbar-links" aria-label="Main navigation">
+    <a routerLink="/overview" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Overview</a>
+    <a routerLink="/send" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Send</a>
+    <a routerLink="/activity" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Activity</a>
+  </nav>
+  <div class="navbar-user">
+    <span class="navbar-username">{{ auth.currentUser()?.name || 'Team member' }}</span>
+    <button class="navbar-logout" type="button" (click)="logout()">Log out</button>
+  </div>
+</header>
+<main class="app-main">
+  <router-outlet />
+</main>

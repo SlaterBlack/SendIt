@@ -1,0 +1,41 @@
+<main class="page-content">
+  <header class="page-title-row">
+    <div>
+      <div class="eyebrow">Your workspace</div>
+      <h1>Overview</h1>
+      <p class="subtitle">A simple starting point for your team’s sending workflows.</p>
+    </div>
+    <a class="btn btn-primary" routerLink="/send">Start a send</a>
+  </header>
+
+  <section class="welcome-card card">
+    <div class="welcome-mark" aria-hidden="true">S</div>
+    <div>
+      <h2>Welcome to SendIt</h2>
+      <p>
+        Your shared workspace is ready. Connect the sending workflow to StoreIt
+        when its message types and API endpoints are defined.
+      </p>
+      <a routerLink="/activity">View activity</a>
+    </div>
+  </section>
+
+  <section class="starter-grid" aria-label="SendIt sections">
+    <a class="starter-card card" routerLink="/send">
+      <span class="starter-icon" aria-hidden="true">↗</span>
+      <span>
+        <strong>Send</strong>
+        <small>Start a new sending workflow.</small>
+      </span>
+      <span class="card-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="starter-card card" routerLink="/activity">
+      <span class="starter-icon" aria-hidden="true">◷</span>
+      <span>
+        <strong>Activity</strong>
+        <small>Review recent and past sends.</small>
+      </span>
+      <span class="card-arrow" aria-hidden="true">→</span>
+    </a>
+  </section>
+</main>

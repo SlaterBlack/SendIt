@@ -1,0 +1,15 @@
+@use '../overview/overview';
+
+.placeholder {
+  max-width: 760px;
+
+  h2 {
+    color: var(--color-primary-dark);
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+  }
+}
