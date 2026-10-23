@@ -13,15 +13,16 @@ frontend/   Angular standalone app (port 2402)
 ```
 
 SendIt intentionally has no app-specific backend. Its `/api` requests are
-proxied to StoreIt at `http://localhost:4002` by default. Update
-`frontend/proxy.conf.json` if StoreIt uses another local port. StoreIt currently
-contains only its README, so the API must be available before sign-in or
+proxied to the `STOREIT_API_URL` in `frontend/.env`. Copy
+`frontend/.env.example` to `frontend/.env`; its default value is
+`http://127.0.0.1:4002`. StoreIt must be running before sign-in or
 backend-backed features can work.
 
 ## Run locally
 
 ```powershell
 cd frontend
+Copy-Item .env.example .env
 npm install
 npm start
 ```
